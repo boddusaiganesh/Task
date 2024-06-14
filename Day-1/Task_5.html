@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .box{
+            display: flex;
+        }
+        .c1{
+            height: 20px;
+            border: 1.5px solid black;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+
+        }
+        .c2{
+            height:20px;
+            border: 1.5px solid black;
+
+        }
+        p{
+            display: inline;
+        }
+        #i1{
+            width: 300px;
+        }
+        .r1{
+            border: 1.5px solid black;
+            width: 438px;
+        }
+        .r2{
+            border: 1.5px solid black;
+            width: 438px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="color: blue;">Registration form</h1>
+
+        <div class="box">
+            <div class="box1">
+                <div class="c1">First Name</div>
+                <div class="c1">Last Name</div>
+                <div class="c1">Email</div>
+                <div class="c1">Password</div>
+                <div class="c1"> Re-enter Password</div>
+                <div class="c1" style="height: 40px;
+                                        flex-direction: column;                                     
+                                        align-items: center;">Gender:</div>
+                <div class="c1">Age:</div>
+                <div class="c1">Phone Number</div>
+                <div class="c1" style="height: 70px;
+                                       flex-direction: column;                                     
+                                       align-items: center;">Address</div>
+                <div class="c1">State</div>
+                <div class="c1">Country</div>
+                <div class="c1">Languages known</div>
+            </div>
+
+            <div class="box2">
+                <div class="c2"><input type="text" id="i1"></div>
+                <div class="c2"><input type="text" id="i1" ></div>
+                <div class="c2"><input type="email" id="i1"></div>
+                <div class="c2"><input type="password" id="i1"></div>
+                <div class="c2"> <input type="password" id="i1"></div>
+                <div class="c2" style="height: 40px;">
+
+                 <div style="border-bottom: 1.5px solid black;">   <p><input type="radio" id="i11">Male</p></div>
+                    <p><input type="radio" id="i11">Female</p>
+                </div>
+                <div class="c2"><input type="number" id="i1"></div>
+                <div class="c2"><input type="number" id="i1"></div>
+                <div class="c2" style="height: 70px;"><input type="text" id="i1" style="height: 65px;"></div>
+                <div class="c2"><input type="text" id="i1"></div>
+                <div class="c2">
+                    <select id="i11">
+                        <option value="Choose your country">Choose your country</option>
+                        <option value="hyd">hyd</option>
+                        <option value="delhi">delhi</option>
+                        <option value="banglore">banglore</option>
+                        <option value="chennai">chennai</option>
+                        <option value="mumbai">mumbai</option>
+                    </select>
+                </div>
+                <div class="c2">
+                    <p> <input type="checkbox" id="i13" value="English">English</p>
+                    <p> <input type="checkbox" id="i13" value="Kannada">Kannada</p>
+                    <p> <input type="checkbox" id="i13" value="Hindi">Hindi</p>
+                    <p> <input type="checkbox" id="i13" value="Telugu">Telugu</p>
+
+                </div>
+            </div>
+
+        </div>
+            <div class="r1"> <p><input type="checkbox">Hereby I declare all the given details are true </p></div>
+            <div class="r2"><p>login to <a href="#">Ethnus</a>website</p></div><br>
+            <Button>Register</Button>
+
+    </div>
+    
+</body>
+</html>
