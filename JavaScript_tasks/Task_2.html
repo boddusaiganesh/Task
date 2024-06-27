@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+
+<body>
+
+
+    <center>
+        <h1> Reverse the string in Alphabetical Order</h1><br><br>
+
+        <input type="text" id="typeInput" style="height: 20px;width: 100px;">
+        <button style="height: 25px;width: 100px;" onclick="press()">Reverse</button>
+
+        <p id="answer"></p>
+
+    </center>
+
+
+
+    <script>
+
+
+        function press() {
+
+            let a = document.getElementById('typeInput').value;
+            function sortString(a) {
+                return a.split('').sort().join('');
+            }
+            document.getElementById("answer").innerHTML = sortString(a);
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

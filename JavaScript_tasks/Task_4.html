@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+</head>
+
+<body>
+    <center>
+        <h1>Date And Time</h1>
+        <div class="container">
+            <button style="width:100px;height:25px" onclick="showDateTime()">show Date</button>
+
+            <p id="TimeOutput"></p>
+
+            <button style="width:100px;height:25px" onclick="showDate1()">show Time</button>
+            <p id="dateOutput"></p>
+        </div>
+        <script>
+            function showDate1() {
+                document.getElementById('dateOutput').innerHTML = new Date();
+            }
+            function showDateTime() {
+                const d = new Date();
+                const da = d.getDate();
+                const m = d.getMonth();
+                const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                const mb = monthNames[m];
+                const year = d.getFullYear();
+                document.getElementById('TimeOutput').innerHTML = da + '/' + mb + '/' + year;
+            }
+        </script>
+</body>
+
+</html>
+

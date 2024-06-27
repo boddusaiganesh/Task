@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <style>
+        .outline-box {
+            border: 2px solid #000; 
+            padding: 20px; 
+            width: 300px; 
+            margin: 0px; 
+            text-align: center; 
+        }
+    </style>
+
+</head>
+<body>
+    <center> 
+        <div class="outline-box">
+            <center>
+                <h3>1st Number: <input type="number" id="typeInput1" style="height: 15px;width: 100px;"></h3>
+                <h3>2nd Number: <input type="number" id="typeInput2" style="height: 15px;width: 100px;"></h3>
+                <button style="height: 25px;width: 75px;" onclick="press1()">Multiply</button>
+                <button style="height: 25px;width: 75px;" onclick="press2()">Divide</button>
+                <p>The Result is:</p>
+                <br>
+                <p id="answer"></p>
+            </center>
+        </div>
+    
+        <script>
+            function press1() {
+                let a = document.getElementById('typeInput1').value;
+                let b = document.getElementById('typeInput2').value;
+                document.getElementById("answer").innerHTML = a * b;
+            }
+    
+            function press2() {
+                let a = document.getElementById('typeInput1').value;
+                let b = document.getElementById('typeInput2').value;
+                document.getElementById("answer").innerHTML = a / b;
+            }
+        </script>
+</body>
+</html>
+
+
+
+
+
